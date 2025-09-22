@@ -11,7 +11,8 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Copia e installa dipendenze
-COPY requirements.txt setup.py ./
+COPY requirements.txt .
+COPY setup.py ./
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
