@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ['python39', 'gcc', 'glib', 'libGL']
+
+[phases.install]
+cmds = ['pip install -e .']
+
+[phases.build]
+cmds = ['python -c "print(\"Build completed\")"']
+
+[start]
+cmd = 'python app.py'
