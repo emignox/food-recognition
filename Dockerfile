@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     libgomp1 \
     gcc \
     g++ \
-    libgl1-mesa-glx \
+    libgl1-mesa-dev \
     libgstreamer1.0-0 \
     libgstreamer-plugins-base1.0-0 \
     && rm -rf /var/lib/apt/lists/*
