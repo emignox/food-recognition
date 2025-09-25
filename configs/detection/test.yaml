@@ -1,5 +1,5 @@
 global:
-  debug: True
+  debug: False
   cfg_transform: configs/detection/transform.yaml
   save_dir: static/assets/detections
   device: cuda:0 # [cpu, cuda:0]
